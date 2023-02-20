@@ -15,25 +15,25 @@ Aaditya Bansal
 
 I have shared the Complete Development process of this project using Blogs and you can see them here : 
 
-##Overview
+## Overview
 
 This Project covers all the necessary steps to complete the Machine Learning Task of Predicting the Housing Prices on California Housing Dataset available on scikit-learn.
 I performed the following steps for successfully creating a model for house price prediction:
 
-###1. Data Extraction 
+### 1. Data Extraction 
 * Import libraries. 
 * Import Dataset from scikit-learn. 
 * Understanding the given Description of Data and the problem Statement 
 * Take a look at different Inputs and details available with dataset. 
 * Storing the obtained dataset into a Pandas Data Frame. 
 
-###2. EDA (Exploratory Data Analysis) and Visualization
+### 2. EDA (Exploratory Data Analysis) and Visualization
 * Getting a closer Look at obtained Data.
 * Exploring different Statistics of the Data (Summary and Distributions)
 * Looking at Correlations (between indiviual features and between Input features and Target)
 * Geospatial Data / Coordinates - Longitude and Lattitude features
 
-###3. Preprocessing
+### 3. Preprocessing
 * Dealing with Duplicate and Null (NaN) values
 * Dealing with Categorical features (e.g. Dummy coding)
 * Dealing with Outlier values
@@ -45,7 +45,7 @@ I performed the following steps for successfully creating a model for house pric
 * Splitting Dataset into train and test sets
 * Feature Scaling (Feature Transformation)
 
-###4. Modeling 
+### 4. Modeling 
 * Specifying Evaluation Metric R squared (using Cross-Validation) 
 * Model Training - trying multiple models and hyperparameters: 
 * Linear Regression 
@@ -60,6 +60,6 @@ I performed the following steps for successfully creating a model for house pric
 * Learn Feature Importance and Relations 
 * Prediction 
 
-###5. Deployment 
+### 5. Deployment 
 * Exporting the trained model to be used for later predictions. (by storing model object as byte file - Pickling) 
 * Creating a Flask App for deploying model on the web.
