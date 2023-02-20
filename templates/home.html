@@ -1,3 +1,89 @@
-<h1>
-	Hello World
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>California Housing Price Prediction</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+  	
+
+    <form method="POST" action="{{url_for('predict')}}">
+    	<h1>California Housing Price Prediction Project 🤩</h2>
+
+      	<label for="MedInc">Median Income in Block (in $100,000)</label>
+      	<input type="text" id="MedInc" name="MedInc" placeholder="Median Income.." required>
+
+      	<label for="HouseAge">Median House age in Block</label>
+      	<input type="text" id="HouseAge" name="HouseAge" placeholder="House Age.." required>
+ 	
+ 		<label for="AveRooms">Average Number of rooms per household</label>
+      	<input type="text" id="AveRooms" name="AveRooms" placeholder="Average Rooms.." required>
+
+      	<label for="AveBedrms">Average number of bedrooms per household</label>
+      	<input type="text" id="AveBedrms" name="AveBedrms" placeholder="Average BedRooms.." required>
+
+      	<label for="Population">Block group population</label>
+      	<input type="text" id="Population" name="Population" placeholder="Population.." required>
+ 	
+ 		<label for="AveOccup">Average number of household members</label>
+      	<input type="text" id="AveOccup" name="AveOccup" placeholder="House Members.." required>
+
+      	<label for="Latitude">block group Latitude</label>
+      	<input type="text" id="Latitude" name="Latitude" placeholder="Latitude.." required>
+
+      	<label for="Longitude">block group Longitude</label>
+      	<input type="text" id="Longitude" name="Longitude" placeholder="Longitude.." required>
+
+      	<input type="submit" value="Predict">
+
+      	<label>{{prediction_text}}</label>
+      	
+    </form>
+
+    
+
+  </body>
+</html>
