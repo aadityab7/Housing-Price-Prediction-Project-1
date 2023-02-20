@@ -13,7 +13,7 @@ I am grateful for this opportunity and excited to see what the future holds! ðŸŒ
 Best regards,
 Aaditya Bansal
 
-I have shared the Complete Development process of this project using Blogs and you can see them here : 
+I have shared the Complete Development process of this project using Blogs and you can see [The Development Process Blogs](https://adiaturb.editorx.io/aaditya-portfolio/post/california-housing-price-prediction-machine-learning-model-project)
 
 ## Overview
 
