@@ -16,7 +16,7 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 #CREATE APP ROUTE
 @app.route('/')
 def home():
-	return render_template("home.html")
+	return render_template("index.html")
 
 #ROUTE FOR PREDICTION API
 @app.route('/predict_api', methods = ['POST'])
@@ -43,7 +43,7 @@ def predict():
 	
 	output = regModel.predict(final_input)[0]
 
-	return render_template("home.html", prediction_text = "The House Price prediction is : {} (in $100,000)".format(output))
+	return render_template("index.html", prediction_text = "The House Price prediction is : {} (in $100,000)".format(output))
 
 
 if(__name__ == "__main__"):
